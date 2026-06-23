@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+
+form{
+    height: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid white;
+    gap: 10px;
+}
+
+input{
+    padding:10px 20px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    outline: none;
+
+}
+
+button{
+    padding: 10px 20px;
+    background-color: rgb(64, 80, 143);
+    color: rgb(215, 229, 226);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.users{
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.user_card{
+
+    height: 40%;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(10, 10, 9);
+    border-radius: 10px;
+    border:1px solid white
+}
+
+
+.img_box{
+    margin-bottom: 10px;
+    height: 70%;
+    width: 100%;
+   ;
+}
+
+.img_box img{
+    height: 100%;
+    width: 100% ;
+    object-fit: cover;
+     border-radius: 10px
+
+}
+
+.text{
+    color: rgb(204, 201, 197);
+}
