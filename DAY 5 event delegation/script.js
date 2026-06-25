@@ -24,10 +24,12 @@ const box = document.querySelector(".box");
 const btn = document.querySelector("button");
 const timer = document.querySelector("#timer");
 const overlay = document.querySelector("#overlay")
+const score = document.querySelector("#score")
 
 let time = 0;
 let interval;
 let stopTimeout;
+let scoreCount = 0;
 
 function randomColor() {
   const hue = Math.random() * 360;
@@ -65,3 +67,8 @@ btn.addEventListener("click", () => {
     overlay.classList.add("show");
   }, 10000);
 });
+
+box.addEventListener("click", ()=>{
+  scoreCount += 1;
+  score.textContent = scoreCount
+})
