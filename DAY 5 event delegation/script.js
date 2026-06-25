@@ -23,6 +23,7 @@ const box = document.querySelector(".box");
 
 const btn = document.querySelector("button");
 const timer = document.querySelector("#timer");
+const overlay = document.querySelector("#overlay")
 
 let time = 0;
 let interval;
@@ -44,6 +45,7 @@ function moveBox() {
 btn.addEventListener("click", () => {
   clearInterval(interval);
   clearTimeout(stopTimeout);
+  overlay.classList.remove("show");
 
   time = 0;
   timer.textContent = time;
@@ -60,5 +62,6 @@ btn.addEventListener("click", () => {
 
   stopTimeout = setTimeout(() => {
     clearInterval(interval);
+    overlay.classList.add("show");
   }, 10000);
 });

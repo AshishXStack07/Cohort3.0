@@ -47,3 +47,25 @@ button{
 #top{
     color: whitesmoke;
 }
+
+#overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#overlay.show{
+    opacity: 1;
+    visibility: visible;
+}
