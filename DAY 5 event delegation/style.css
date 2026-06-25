@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main{
+    position: relative;
+    height: 70%;
+    width: 25%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+
+}
+
+.box{
+    position: absolute;
+    height: 10%;
+    width: 15%;
+    border-radius: 10%;
+    background-color: red;
+    display: none;
+    
+
+}
+
+#top{
+    color: whitesmoke;
+}
